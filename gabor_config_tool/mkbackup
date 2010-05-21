@@ -1,0 +1,4 @@
+INCLUDEPATH += . /usr/local/cuda/include tinyxml
+
+QT += opengl
+LIBS += -L. -lgabor -L/usr/local/cuda/lib64 -lcudart -lcufft -lGLEW

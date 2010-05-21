@@ -1,0 +1,7 @@
+The following packages are needed to build/run:
+- CUDA Driver
+- CUDA Toolkit
+- CUDA SDK
+- Qt
+- V4L
+- gspca_ov534 (PS3 Eye driver)

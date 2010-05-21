@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<ProgramConfiguration>
+    <GlobalConfig>
+        <SendFreqency>100.000000</SendFreqency>
+        <HeartbeatFrequency>10.000000</HeartbeatFrequency>
+        <NCSTools>0</NCSTools>
+        <ServerThrottle>0</ServerThrottle>
+        <PortNCSTools>20001</PortNCSTools>
+        <HostNCSTools>localhost</HostNCSTools>
+        <DiffImages>1</DiffImages>
+    </GlobalConfig>
+    <GaborFilter>
+        <Name>gabor_1</Name>
+        <Theta>0.000000</Theta>
+        <Sigma>9.000000</Sigma>
+        <Lambda>25.000000</Lambda>
+        <Psi>0.000000</Psi>
+        <Host>localhost</Host>
+        <Port>20001</Port>
+        <Type>defaultype</Type>
+        <Job>defaultjob</Job>
+        <Div_X>4</Div_X>
+        <Div_Y>4</Div_Y>
+    </GaborFilter>
+    <GaborFilter>
+        <Name>gabor_2</Name>
+        <Theta>1.570796</Theta>
+        <Sigma>9.000000</Sigma>
+        <Lambda>25.000000</Lambda>
+        <Psi>0.000000</Psi>
+        <Host>localhost</Host>
+        <Port>20001</Port>
+        <Type>defaultype</Type>
+        <Job>defaultjob</Job>
+        <Div_X>4</Div_X>
+        <Div_Y>4</Div_Y>
+    </GaborFilter>
+</ProgramConfiguration>

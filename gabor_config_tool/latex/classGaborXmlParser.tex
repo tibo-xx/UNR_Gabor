@@ -1,0 +1,70 @@
+\hypertarget{classGaborXmlParser}{
+\section{GaborXmlParser Class Reference}
+\label{classGaborXmlParser}\index{GaborXmlParser@{GaborXmlParser}}
+}
+{\tt \#include $<$GaborXmlParser.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classGaborXmlParser_53abe9b7f8cbd1654273f2220dfb8ea0}{GaborXmlParser} ()
+\item 
+\hyperlink{classGaborXmlParser_e834789f7d64688cf343ee2a84e299b5}{$\sim$GaborXmlParser} ()
+\item 
+bool \hyperlink{classGaborXmlParser_fbf69ecd4a1e4354093c908e4e03fab3}{save} (string filename, \hyperlink{classCompleteConfig}{CompleteConfig} config)
+\item 
+\hyperlink{classCompleteConfig}{CompleteConfig} \hyperlink{classGaborXmlParser_a03d1e604ec6e694d831d4cc6aa45465}{loadConfig} (string filename, string \&error)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulates all XML parsing, file opening, saving for configurations. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGaborXmlParser_53abe9b7f8cbd1654273f2220dfb8ea0}{
+\index{GaborXmlParser@{GaborXmlParser}!GaborXmlParser@{GaborXmlParser}}
+\index{GaborXmlParser@{GaborXmlParser}!GaborXmlParser@{GaborXmlParser}}
+\subsubsection[{GaborXmlParser}]{\setlength{\rightskip}{0pt plus 5cm}GaborXmlParser::GaborXmlParser ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classGaborXmlParser_53abe9b7f8cbd1654273f2220dfb8ea0}
+
+
+Default constructor. \hypertarget{classGaborXmlParser_e834789f7d64688cf343ee2a84e299b5}{
+\index{GaborXmlParser@{GaborXmlParser}!$\sim$GaborXmlParser@{$\sim$GaborXmlParser}}
+\index{$\sim$GaborXmlParser@{$\sim$GaborXmlParser}!GaborXmlParser@{GaborXmlParser}}
+\subsubsection[{$\sim$GaborXmlParser}]{\setlength{\rightskip}{0pt plus 5cm}GaborXmlParser::$\sim$GaborXmlParser ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classGaborXmlParser_e834789f7d64688cf343ee2a84e299b5}
+
+
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGaborXmlParser_a03d1e604ec6e694d831d4cc6aa45465}{
+\index{GaborXmlParser@{GaborXmlParser}!loadConfig@{loadConfig}}
+\index{loadConfig@{loadConfig}!GaborXmlParser@{GaborXmlParser}}
+\subsubsection[{loadConfig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CompleteConfig} GaborXmlParser::loadConfig (string {\em filename}, \/  string \& {\em error})}}
+\label{classGaborXmlParser_a03d1e604ec6e694d831d4cc6aa45465}
+
+
+Load configuration from file. Returns complete configuration object. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filename}]Name of XML file to load. \item[{\em error}]String to be updated with error on failed load. \end{description}
+\end{Desc}
+\hypertarget{classGaborXmlParser_fbf69ecd4a1e4354093c908e4e03fab3}{
+\index{GaborXmlParser@{GaborXmlParser}!save@{save}}
+\index{save@{save}!GaborXmlParser@{GaborXmlParser}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}bool GaborXmlParser::save (string {\em filename}, \/  {\bf CompleteConfig} {\em config})}}
+\label{classGaborXmlParser_fbf69ecd4a1e4354093c908e4e03fab3}
+
+
+Save configuration to XML file. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em filename}]Name of file to save. \item[{\em config}]Configuration object to save to file. \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+GaborXmlParser.h\item 
+GaborXmlParser.cpp\end{CompactItemize}

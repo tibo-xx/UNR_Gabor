@@ -1,0 +1,156 @@
+\hypertarget{classGLContext}{
+\section{GLContext Class Reference}
+\label{classGLContext}\index{GLContext@{GLContext}}
+}
+{\tt \#include $<$GLContext.h$>$}
+
+\subsection*{Public Slots}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classGLContext_bc98d2bce284ff629e71a70d43580585}{displayImages} ()
+\item 
+void \hyperlink{classGLContext_5e59aaa40eef13416aea345fbd3a18d9}{start} ()
+\item 
+void \hyperlink{classGLContext_dcb0d67f5abe53af20878c897fa645ec}{setNewFilterParameters} (float theta, float sigma, float lambda, float psi)
+\item 
+void \hyperlink{classGLContext_a70a83ef6631a6348b030302d59c81a1}{setFilterOpacity} (float)
+\item 
+void \hyperlink{classGLContext_f3f800a58fc12d95d4604de755c7fa57}{setDifferenceImages} (int b)
+\end{CompactItemize}
+\subsection*{Signals}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classGLContext_aab9d6eeb0adaeab6a194cfeb7b10f3b}{newFPS} (float)
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classGLContext_57fc1d8a0ec1de5a3445c5aa638e1150}{GLContext} (QString video\_\-source, QWidget $\ast$parent=0)
+\item 
+\hyperlink{classGLContext_ae8b3e070f7f2a9ecf235202f2e330dd}{$\sim$GLContext} ()
+\item 
+void \hyperlink{classGLContext_df4f504b82483546d470d8361426317b}{cleanup} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classGLContext_a890225a087cec830eef8a79c2b3ad6c}{initializeGL} ()
+\item 
+void \hyperlink{classGLContext_e4ca1fa439790e7f7ea5338000ce5d8b}{resizeGL} (int w, int h)
+\item 
+void \hyperlink{classGLContext_24e08766dea1888279ffd5499087bc62}{paintGL} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Widget for OpenGL context (for display of camera video and filter) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGLContext_57fc1d8a0ec1de5a3445c5aa638e1150}{
+\index{GLContext@{GLContext}!GLContext@{GLContext}}
+\index{GLContext@{GLContext}!GLContext@{GLContext}}
+\subsubsection[{GLContext}]{\setlength{\rightskip}{0pt plus 5cm}GLContext::GLContext (QString {\em video\_\-source}, \/  QWidget $\ast$ {\em parent} = {\tt 0})}}
+\label{classGLContext_57fc1d8a0ec1de5a3445c5aa638e1150}
+
+
+Default constructor. \hypertarget{classGLContext_ae8b3e070f7f2a9ecf235202f2e330dd}{
+\index{GLContext@{GLContext}!$\sim$GLContext@{$\sim$GLContext}}
+\index{$\sim$GLContext@{$\sim$GLContext}!GLContext@{GLContext}}
+\subsubsection[{$\sim$GLContext}]{\setlength{\rightskip}{0pt plus 5cm}GLContext::$\sim$GLContext ()}}
+\label{classGLContext_ae8b3e070f7f2a9ecf235202f2e330dd}
+
+
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGLContext_df4f504b82483546d470d8361426317b}{
+\index{GLContext@{GLContext}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!GLContext@{GLContext}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::cleanup ()}}
+\label{classGLContext_df4f504b82483546d470d8361426317b}
+
+
+Perform necessary cleanup operations on program exit. \hypertarget{classGLContext_bc98d2bce284ff629e71a70d43580585}{
+\index{GLContext@{GLContext}!displayImages@{displayImages}}
+\index{displayImages@{displayImages}!GLContext@{GLContext}}
+\subsubsection[{displayImages}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::displayImages ()\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classGLContext_bc98d2bce284ff629e71a70d43580585}
+
+
+Retrieve full image and respective filtered image from worker thread and display. \hypertarget{classGLContext_a890225a087cec830eef8a79c2b3ad6c}{
+\index{GLContext@{GLContext}!initializeGL@{initializeGL}}
+\index{initializeGL@{initializeGL}!GLContext@{GLContext}}
+\subsubsection[{initializeGL}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::initializeGL ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classGLContext_a890225a087cec830eef8a79c2b3ad6c}
+
+
+OpenGL initialization. \hypertarget{classGLContext_aab9d6eeb0adaeab6a194cfeb7b10f3b}{
+\index{GLContext@{GLContext}!newFPS@{newFPS}}
+\index{newFPS@{newFPS}!GLContext@{GLContext}}
+\subsubsection[{newFPS}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::newFPS (float)\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{classGLContext_aab9d6eeb0adaeab6a194cfeb7b10f3b}
+
+
+Signal to emit when a new FPS value has been calculated. \hypertarget{classGLContext_24e08766dea1888279ffd5499087bc62}{
+\index{GLContext@{GLContext}!paintGL@{paintGL}}
+\index{paintGL@{paintGL}!GLContext@{GLContext}}
+\subsubsection[{paintGL}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::paintGL ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classGLContext_24e08766dea1888279ffd5499087bc62}
+
+
+Perform all rendering. Should not directly call this function, but instead use updateGL() to trigger a render in the Qt event queue. \hypertarget{classGLContext_e4ca1fa439790e7f7ea5338000ce5d8b}{
+\index{GLContext@{GLContext}!resizeGL@{resizeGL}}
+\index{resizeGL@{resizeGL}!GLContext@{GLContext}}
+\subsubsection[{resizeGL}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::resizeGL (int {\em w}, \/  int {\em h})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classGLContext_e4ca1fa439790e7f7ea5338000ce5d8b}
+
+
+Executed when this widget is resized. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em w}]Width of new size. \item[{\em h}]Height of new size. \end{description}
+\end{Desc}
+\hypertarget{classGLContext_f3f800a58fc12d95d4604de755c7fa57}{
+\index{GLContext@{GLContext}!setDifferenceImages@{setDifferenceImages}}
+\index{setDifferenceImages@{setDifferenceImages}!GLContext@{GLContext}}
+\subsubsection[{setDifferenceImages}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::setDifferenceImages (int {\em b})\hspace{0.3cm}{\tt  \mbox{[}inline, slot\mbox{]}}}}
+\label{classGLContext_f3f800a58fc12d95d4604de755c7fa57}
+
+
+Set status of image differencing. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em b}]True = difference images / False = do NOT difference images. \end{description}
+\end{Desc}
+\hypertarget{classGLContext_a70a83ef6631a6348b030302d59c81a1}{
+\index{GLContext@{GLContext}!setFilterOpacity@{setFilterOpacity}}
+\index{setFilterOpacity@{setFilterOpacity}!GLContext@{GLContext}}
+\subsubsection[{setFilterOpacity}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::setFilterOpacity (float {\em opacity})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classGLContext_a70a83ef6631a6348b030302d59c81a1}
+
+
+Set new opacity for filter image (overlay on raw camera image) \hypertarget{classGLContext_dcb0d67f5abe53af20878c897fa645ec}{
+\index{GLContext@{GLContext}!setNewFilterParameters@{setNewFilterParameters}}
+\index{setNewFilterParameters@{setNewFilterParameters}!GLContext@{GLContext}}
+\subsubsection[{setNewFilterParameters}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::setNewFilterParameters (float {\em theta}, \/  float {\em sigma}, \/  float {\em lambda}, \/  float {\em psi})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classGLContext_dcb0d67f5abe53af20878c897fa645ec}
+
+
+Set new filter parameters. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em theta}]Theta parameter for gabor filter. \item[{\em sigma}]Sigma parameter for gabor filter. \item[{\em lambda}]Lambda parameter for gabor fileter. \item[{\em psi}]Psi parameter for gabor fileter. \end{description}
+\end{Desc}
+\hypertarget{classGLContext_5e59aaa40eef13416aea345fbd3a18d9}{
+\index{GLContext@{GLContext}!start@{start}}
+\index{start@{start}!GLContext@{GLContext}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void GLContext::start ()\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classGLContext_5e59aaa40eef13416aea345fbd3a18d9}
+
+
+Start worker thread for camera capture and filtering. 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+GLContext.h\item 
+GLContext.cpp\end{CompactItemize}

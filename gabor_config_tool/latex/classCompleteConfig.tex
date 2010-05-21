@@ -1,0 +1,122 @@
+\hypertarget{classCompleteConfig}{
+\section{CompleteConfig Class Reference}
+\label{classCompleteConfig}\index{CompleteConfig@{CompleteConfig}}
+}
+{\tt \#include $<$GaborXmlParser.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCompleteConfig_1daa896bdd73c37fc2c89481a5063459}{CompleteConfig} ()
+\item 
+\hyperlink{classCompleteConfig_2130681d6d69b1df2d9e23605ced0831}{$\sim$CompleteConfig} ()
+\item 
+void \hyperlink{classCompleteConfig_ea392139df6e1bbf2f64f631db4800ff}{validate} (string \&error)
+\item 
+bool \hyperlink{classCompleteConfig_ec16272f21426a39ea0e8a81a443d155}{isValid} ()
+\item 
+void \hyperlink{classCompleteConfig_4d8f89564b8f74ce0f84d90893197c69}{clear} ()
+\item 
+\hyperlink{structGaborConfig}{GaborConfig} \hyperlink{classCompleteConfig_b8dda7195193e2c2639e74fafaf3bd8f}{getDefaultGaborConfig} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classCompleteConfig_e12aceb1f4eabadf1b515c836c783700}{
+float \textbf{send\_\-freq}}
+\label{classCompleteConfig_e12aceb1f4eabadf1b515c836c783700}
+
+\item 
+\hypertarget{classCompleteConfig_688895b9e901eccaa24522d89bccf46a}{
+vector$<$ \hyperlink{structGaborConfig}{GaborConfig} $>$ \textbf{filters}}
+\label{classCompleteConfig_688895b9e901eccaa24522d89bccf46a}
+
+\item 
+\hypertarget{classCompleteConfig_215e819e9bbeb381e45fab48409940bc}{
+float \textbf{heartbeat\_\-freq}}
+\label{classCompleteConfig_215e819e9bbeb381e45fab48409940bc}
+
+\item 
+\hypertarget{classCompleteConfig_823fb25e96a99885721aa82e494898dd}{
+bool \textbf{b\_\-ncstools}}
+\label{classCompleteConfig_823fb25e96a99885721aa82e494898dd}
+
+\item 
+\hypertarget{classCompleteConfig_6d56d10fdcfc5b951cc5a9592602d4f2}{
+bool \textbf{b\_\-server\_\-throttle}}
+\label{classCompleteConfig_6d56d10fdcfc5b951cc5a9592602d4f2}
+
+\item 
+\hypertarget{classCompleteConfig_753ef7ee4af14a02cd50c3f157033585}{
+int \textbf{port\_\-ncstools}}
+\label{classCompleteConfig_753ef7ee4af14a02cd50c3f157033585}
+
+\item 
+\hypertarget{classCompleteConfig_23bd211ea58b4d51a95f55d8ae1a9705}{
+string \textbf{host\_\-ncstools}}
+\label{classCompleteConfig_23bd211ea58b4d51a95f55d8ae1a9705}
+
+\item 
+\hypertarget{classCompleteConfig_ba83c01ec04736ca221c374a3b69a654}{
+bool \textbf{b\_\-diff\_\-images}}
+\label{classCompleteConfig_ba83c01ec04736ca221c374a3b69a654}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class for complete configuration Includes:\begin{itemize}
+\item list of GaborConfigs\item global configuration \end{itemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCompleteConfig_1daa896bdd73c37fc2c89481a5063459}{
+\index{CompleteConfig@{CompleteConfig}!CompleteConfig@{CompleteConfig}}
+\index{CompleteConfig@{CompleteConfig}!CompleteConfig@{CompleteConfig}}
+\subsubsection[{CompleteConfig}]{\setlength{\rightskip}{0pt plus 5cm}CompleteConfig::CompleteConfig ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classCompleteConfig_1daa896bdd73c37fc2c89481a5063459}
+
+
+Default constructor \hypertarget{classCompleteConfig_2130681d6d69b1df2d9e23605ced0831}{
+\index{CompleteConfig@{CompleteConfig}!$\sim$CompleteConfig@{$\sim$CompleteConfig}}
+\index{$\sim$CompleteConfig@{$\sim$CompleteConfig}!CompleteConfig@{CompleteConfig}}
+\subsubsection[{$\sim$CompleteConfig}]{\setlength{\rightskip}{0pt plus 5cm}CompleteConfig::$\sim$CompleteConfig ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classCompleteConfig_2130681d6d69b1df2d9e23605ced0831}
+
+
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCompleteConfig_4d8f89564b8f74ce0f84d90893197c69}{
+\index{CompleteConfig@{CompleteConfig}!clear@{clear}}
+\index{clear@{clear}!CompleteConfig@{CompleteConfig}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void CompleteConfig::clear ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classCompleteConfig_4d8f89564b8f74ce0f84d90893197c69}
+
+
+Reset configuration to defaults. \hypertarget{classCompleteConfig_b8dda7195193e2c2639e74fafaf3bd8f}{
+\index{CompleteConfig@{CompleteConfig}!getDefaultGaborConfig@{getDefaultGaborConfig}}
+\index{getDefaultGaborConfig@{getDefaultGaborConfig}!CompleteConfig@{CompleteConfig}}
+\subsubsection[{getDefaultGaborConfig}]{\setlength{\rightskip}{0pt plus 5cm}{\bf GaborConfig} CompleteConfig::getDefaultGaborConfig ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classCompleteConfig_b8dda7195193e2c2639e74fafaf3bd8f}
+
+
+Returns a \hyperlink{structGaborConfig}{GaborConfig} struct with default values. \hypertarget{classCompleteConfig_ec16272f21426a39ea0e8a81a443d155}{
+\index{CompleteConfig@{CompleteConfig}!isValid@{isValid}}
+\index{isValid@{isValid}!CompleteConfig@{CompleteConfig}}
+\subsubsection[{isValid}]{\setlength{\rightskip}{0pt plus 5cm}bool CompleteConfig::isValid ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classCompleteConfig_ec16272f21426a39ea0e8a81a443d155}
+
+
+Returns validity of the current configuration. Assumes that \hyperlink{classCompleteConfig_ea392139df6e1bbf2f64f631db4800ff}{validate()} has been called since last configuratino change. \hypertarget{classCompleteConfig_ea392139df6e1bbf2f64f631db4800ff}{
+\index{CompleteConfig@{CompleteConfig}!validate@{validate}}
+\index{validate@{validate}!CompleteConfig@{CompleteConfig}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}void CompleteConfig::validate (string \& {\em error})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classCompleteConfig_ea392139df6e1bbf2f64f631db4800ff}
+
+
+Update the b\_\-valid boolean to reflect whether the configuration is valid. @ param error Updated to reflect the status of any errors on a failed validation. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+GaborXmlParser.h\end{CompactItemize}

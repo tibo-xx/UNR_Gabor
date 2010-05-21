@@ -1,0 +1,32 @@
+
+TODO:
+- Fix bug with NCSTools communication.
+- Implement commands received from NCSTools (pause, heartbeat, etc.)
+  --> Parse command and take action in beginning of main loop
+
+Main DisplayFunc "Loop":
+
+	recv from NCSTools server: parse command and take action
+	
+	return if paused / throttle flag not set
+	
+	capture from camera
+	
+	get subimage/pad
+	
+	offload subimage to gpu
+	
+	perform gabor filtering and get probabilities for reach filter
+	
+	if !differenceFlag return (should work for NOT diffed option too - 
+		we will just receive 2 images before probability calculation
+		and sending)
+	
+	create all textures and render
+	
+	publish probabilities to NCS
+	
+	write probs to file (if configured to do so)
+	
+	update FPS title
+	

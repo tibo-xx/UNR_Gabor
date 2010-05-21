@@ -1,0 +1,59 @@
+\hypertarget{classTimer}{
+\section{Timer Class Reference}
+\label{classTimer}\index{Timer@{Timer}}
+}
+{\tt \#include $<$Timer.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTimer_5f16e8da27d2a5a5242dead46de05d97}{Timer} ()
+\item 
+\hyperlink{classTimer_14fa469c4c295c5fa6e66a4ad1092146}{$\sim$Timer} ()
+\item 
+void \hyperlink{classTimer_3a8b5272198d029779dc9302a54305a8}{start} ()
+\item 
+unsigned long \hyperlink{classTimer_6593c73e68343edf6ce2d1c14302c44a}{stop} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Basic timer class. Uses gettimeofday() function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTimer_5f16e8da27d2a5a5242dead46de05d97}{
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}Timer::Timer ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classTimer_5f16e8da27d2a5a5242dead46de05d97}
+
+
+Defalaut constructor. \hypertarget{classTimer_14fa469c4c295c5fa6e66a4ad1092146}{
+\index{Timer@{Timer}!$\sim$Timer@{$\sim$Timer}}
+\index{$\sim$Timer@{$\sim$Timer}!Timer@{Timer}}
+\subsubsection[{$\sim$Timer}]{\setlength{\rightskip}{0pt plus 5cm}Timer::$\sim$Timer ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classTimer_14fa469c4c295c5fa6e66a4ad1092146}
+
+
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTimer_3a8b5272198d029779dc9302a54305a8}{
+\index{Timer@{Timer}!start@{start}}
+\index{start@{start}!Timer@{Timer}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Timer::start ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classTimer_3a8b5272198d029779dc9302a54305a8}
+
+
+\char`\"{}Start\char`\"{} timer: save current time. \hypertarget{classTimer_6593c73e68343edf6ce2d1c14302c44a}{
+\index{Timer@{Timer}!stop@{stop}}
+\index{stop@{stop}!Timer@{Timer}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Timer::stop ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classTimer_6593c73e68343edf6ce2d1c14302c44a}
+
+
+\char`\"{}Stop\char`\"{} timer: get current time and subtract from start time. Returns microseconds since \hyperlink{classTimer_3a8b5272198d029779dc9302a54305a8}{start()}. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+Timer.h\end{CompactItemize}

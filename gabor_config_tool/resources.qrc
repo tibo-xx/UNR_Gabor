@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="icons" >
+    <file>icons/Pencil-64.png</file>
+    <file>icons/Add-64.png</file>
+    <file>icons/Copy-64.png</file>
+    <file>icons/Delete-64.png</file>
+    <file>icons/Down-64.png</file>
+    <file>icons/Up-64.png</file>
+  </qresource>
+</RCC>

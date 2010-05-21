@@ -1,0 +1,202 @@
+\hypertarget{classWorkerThread}{
+\section{WorkerThread Class Reference}
+\label{classWorkerThread}\index{WorkerThread@{WorkerThread}}
+}
+{\tt \#include $<$WorkerThread.h$>$}
+
+\subsection*{Public Slots}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classWorkerThread_e8e56694aa4f03dfef4c206269f7ef8d}{setNewFilterParameters} (float theta, float sigma, float lambda, float psi)
+\item 
+void \hyperlink{classWorkerThread_123b802c534d8e624f49cac6a94933d7}{setDifferenceImages} (bool b)
+\end{CompactItemize}
+\subsection*{Signals}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classWorkerThread_ea7496b585a29398a3c5a490fb3bf9c6}{filterComplete} ()
+\item 
+void \hyperlink{classWorkerThread_beca512642668fb06773f60abc56ca32}{newFilterImage} ()
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classWorkerThread_c4ca6480ac57511724082cd4961038e4}{WorkerThread} (QString video\_\-source, QObject $\ast$)
+\item 
+\hyperlink{classWorkerThread_5aa554e7d73f0f185a850ca0ef145d6d}{$\sim$WorkerThread} ()
+\item 
+void \hyperlink{classWorkerThread_035f43bc756f6f220555fb501fad1776}{cleanup} ()
+\item 
+void \hyperlink{classWorkerThread_b1b55d37c2317d8799cd65ee864f7d8b}{run} ()
+\item 
+void \hyperlink{classWorkerThread_bed6b78d6e49140a85c80613aa58625e}{lockImageMutex} ()
+\item 
+void \hyperlink{classWorkerThread_46021367ce9eab463d36a150ee2a109e}{unlockImageMutex} ()
+\item 
+void \hyperlink{classWorkerThread_72e14fd4cfb0ff06088ed568fbbc4658}{wakeWaitingForImageProcessed} ()
+\item 
+void \hyperlink{classWorkerThread_9fa421c0e788a4e6e4e2bc5933aa7326}{lockFilterImageMutex} ()
+\item 
+void \hyperlink{classWorkerThread_dfb13dc544bc59abc5b703c27d9767ef}{unlockFilterImageMutex} ()
+\item 
+float $\ast$ \hyperlink{classWorkerThread_bfa352a6f31a5b62a92d5c4cebbece96}{getFullImage} ()
+\item 
+float $\ast$ \hyperlink{classWorkerThread_57da1f3c04f0e9972e9091783ea95d32}{getFilteredImage} ()
+\item 
+float $\ast$ \hyperlink{classWorkerThread_03d82e87ce2cc58dad74a00e512815fb}{getFilterImage} ()
+\item 
+bool \hyperlink{classWorkerThread_f33b6a6ada1af97648571411e2eb10d4}{isImageProcessed} ()
+\item 
+void \hyperlink{classWorkerThread_cca9ec5f0263638f8bafb5fc9cd46a07}{setImageProcessed} (bool)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Thread to capture from camera and filter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classWorkerThread_c4ca6480ac57511724082cd4961038e4}{
+\index{WorkerThread@{WorkerThread}!WorkerThread@{WorkerThread}}
+\index{WorkerThread@{WorkerThread}!WorkerThread@{WorkerThread}}
+\subsubsection[{WorkerThread}]{\setlength{\rightskip}{0pt plus 5cm}WorkerThread::WorkerThread (QString {\em video\_\-source}, \/  QObject $\ast$ {\em parent})}}
+\label{classWorkerThread_c4ca6480ac57511724082cd4961038e4}
+
+
+Default constructor. \hypertarget{classWorkerThread_5aa554e7d73f0f185a850ca0ef145d6d}{
+\index{WorkerThread@{WorkerThread}!$\sim$WorkerThread@{$\sim$WorkerThread}}
+\index{$\sim$WorkerThread@{$\sim$WorkerThread}!WorkerThread@{WorkerThread}}
+\subsubsection[{$\sim$WorkerThread}]{\setlength{\rightskip}{0pt plus 5cm}WorkerThread::$\sim$WorkerThread ()}}
+\label{classWorkerThread_5aa554e7d73f0f185a850ca0ef145d6d}
+
+
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classWorkerThread_035f43bc756f6f220555fb501fad1776}{
+\index{WorkerThread@{WorkerThread}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!WorkerThread@{WorkerThread}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::cleanup ()}}
+\label{classWorkerThread_035f43bc756f6f220555fb501fad1776}
+
+
+Perform all necessary cleanup / terminate thread. \hypertarget{classWorkerThread_ea7496b585a29398a3c5a490fb3bf9c6}{
+\index{WorkerThread@{WorkerThread}!filterComplete@{filterComplete}}
+\index{filterComplete@{filterComplete}!WorkerThread@{WorkerThread}}
+\subsubsection[{filterComplete}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::filterComplete ()\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{classWorkerThread_ea7496b585a29398a3c5a490fb3bf9c6}
+
+
+To be emitted when the filter is complete \hypertarget{classWorkerThread_57da1f3c04f0e9972e9091783ea95d32}{
+\index{WorkerThread@{WorkerThread}!getFilteredImage@{getFilteredImage}}
+\index{getFilteredImage@{getFilteredImage}!WorkerThread@{WorkerThread}}
+\subsubsection[{getFilteredImage}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ WorkerThread::getFilteredImage ()}}
+\label{classWorkerThread_57da1f3c04f0e9972e9091783ea95d32}
+
+
+Return filetered image data. \hypertarget{classWorkerThread_03d82e87ce2cc58dad74a00e512815fb}{
+\index{WorkerThread@{WorkerThread}!getFilterImage@{getFilterImage}}
+\index{getFilterImage@{getFilterImage}!WorkerThread@{WorkerThread}}
+\subsubsection[{getFilterImage}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ WorkerThread::getFilterImage ()}}
+\label{classWorkerThread_03d82e87ce2cc58dad74a00e512815fb}
+
+
+Return image data of filter. \hypertarget{classWorkerThread_bfa352a6f31a5b62a92d5c4cebbece96}{
+\index{WorkerThread@{WorkerThread}!getFullImage@{getFullImage}}
+\index{getFullImage@{getFullImage}!WorkerThread@{WorkerThread}}
+\subsubsection[{getFullImage}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ WorkerThread::getFullImage ()}}
+\label{classWorkerThread_bfa352a6f31a5b62a92d5c4cebbece96}
+
+
+Return full image data. \hypertarget{classWorkerThread_f33b6a6ada1af97648571411e2eb10d4}{
+\index{WorkerThread@{WorkerThread}!isImageProcessed@{isImageProcessed}}
+\index{isImageProcessed@{isImageProcessed}!WorkerThread@{WorkerThread}}
+\subsubsection[{isImageProcessed}]{\setlength{\rightskip}{0pt plus 5cm}bool WorkerThread::isImageProcessed ()}}
+\label{classWorkerThread_f33b6a6ada1af97648571411e2eb10d4}
+
+
+Return if image has been processed. \hypertarget{classWorkerThread_9fa421c0e788a4e6e4e2bc5933aa7326}{
+\index{WorkerThread@{WorkerThread}!lockFilterImageMutex@{lockFilterImageMutex}}
+\index{lockFilterImageMutex@{lockFilterImageMutex}!WorkerThread@{WorkerThread}}
+\subsubsection[{lockFilterImageMutex}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::lockFilterImageMutex ()}}
+\label{classWorkerThread_9fa421c0e788a4e6e4e2bc5933aa7326}
+
+
+Lock mutex for filter image. \hypertarget{classWorkerThread_bed6b78d6e49140a85c80613aa58625e}{
+\index{WorkerThread@{WorkerThread}!lockImageMutex@{lockImageMutex}}
+\index{lockImageMutex@{lockImageMutex}!WorkerThread@{WorkerThread}}
+\subsubsection[{lockImageMutex}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::lockImageMutex ()}}
+\label{classWorkerThread_bed6b78d6e49140a85c80613aa58625e}
+
+
+Lock mutex for camera image. \hypertarget{classWorkerThread_beca512642668fb06773f60abc56ca32}{
+\index{WorkerThread@{WorkerThread}!newFilterImage@{newFilterImage}}
+\index{newFilterImage@{newFilterImage}!WorkerThread@{WorkerThread}}
+\subsubsection[{newFilterImage}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::newFilterImage ()\hspace{0.3cm}{\tt  \mbox{[}signal\mbox{]}}}}
+\label{classWorkerThread_beca512642668fb06773f60abc56ca32}
+
+
+To be emitted when a new filter image has been created (for display purposes). \hypertarget{classWorkerThread_b1b55d37c2317d8799cd65ee864f7d8b}{
+\index{WorkerThread@{WorkerThread}!run@{run}}
+\index{run@{run}!WorkerThread@{WorkerThread}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::run ()}}
+\label{classWorkerThread_b1b55d37c2317d8799cd65ee864f7d8b}
+
+
+Start thread. \hypertarget{classWorkerThread_123b802c534d8e624f49cac6a94933d7}{
+\index{WorkerThread@{WorkerThread}!setDifferenceImages@{setDifferenceImages}}
+\index{setDifferenceImages@{setDifferenceImages}!WorkerThread@{WorkerThread}}
+\subsubsection[{setDifferenceImages}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::setDifferenceImages (bool {\em b})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classWorkerThread_123b802c534d8e624f49cac6a94933d7}
+
+
+Set difference images flag \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em b}]True = difference images / False = do NOT difference images \end{description}
+\end{Desc}
+\hypertarget{classWorkerThread_cca9ec5f0263638f8bafb5fc9cd46a07}{
+\index{WorkerThread@{WorkerThread}!setImageProcessed@{setImageProcessed}}
+\index{setImageProcessed@{setImageProcessed}!WorkerThread@{WorkerThread}}
+\subsubsection[{setImageProcessed}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::setImageProcessed (bool {\em processed})}}
+\label{classWorkerThread_cca9ec5f0263638f8bafb5fc9cd46a07}
+
+
+Update status of image-processed flag. \hypertarget{classWorkerThread_e8e56694aa4f03dfef4c206269f7ef8d}{
+\index{WorkerThread@{WorkerThread}!setNewFilterParameters@{setNewFilterParameters}}
+\index{setNewFilterParameters@{setNewFilterParameters}!WorkerThread@{WorkerThread}}
+\subsubsection[{setNewFilterParameters}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::setNewFilterParameters (float {\em theta}, \/  float {\em sigma}, \/  float {\em lambda}, \/  float {\em psi})\hspace{0.3cm}{\tt  \mbox{[}slot\mbox{]}}}}
+\label{classWorkerThread_e8e56694aa4f03dfef4c206269f7ef8d}
+
+
+Set new filtere parameters. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em theta}]Theta parameter of gabor filter. \item[{\em sigma}]Sigma parameter of gabor filter. \item[{\em lambda}]Lambda parameter of gabor filter. \item[{\em psi}]Psi parameter of gabor filter. \end{description}
+\end{Desc}
+\hypertarget{classWorkerThread_dfb13dc544bc59abc5b703c27d9767ef}{
+\index{WorkerThread@{WorkerThread}!unlockFilterImageMutex@{unlockFilterImageMutex}}
+\index{unlockFilterImageMutex@{unlockFilterImageMutex}!WorkerThread@{WorkerThread}}
+\subsubsection[{unlockFilterImageMutex}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::unlockFilterImageMutex ()}}
+\label{classWorkerThread_dfb13dc544bc59abc5b703c27d9767ef}
+
+
+Unlock mutex for filter image. \hypertarget{classWorkerThread_46021367ce9eab463d36a150ee2a109e}{
+\index{WorkerThread@{WorkerThread}!unlockImageMutex@{unlockImageMutex}}
+\index{unlockImageMutex@{unlockImageMutex}!WorkerThread@{WorkerThread}}
+\subsubsection[{unlockImageMutex}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::unlockImageMutex ()}}
+\label{classWorkerThread_46021367ce9eab463d36a150ee2a109e}
+
+
+Unlock mutex for camera image. \hypertarget{classWorkerThread_72e14fd4cfb0ff06088ed568fbbc4658}{
+\index{WorkerThread@{WorkerThread}!wakeWaitingForImageProcessed@{wakeWaitingForImageProcessed}}
+\index{wakeWaitingForImageProcessed@{wakeWaitingForImageProcessed}!WorkerThread@{WorkerThread}}
+\subsubsection[{wakeWaitingForImageProcessed}]{\setlength{\rightskip}{0pt plus 5cm}void WorkerThread::wakeWaitingForImageProcessed ()}}
+\label{classWorkerThread_72e14fd4cfb0ff06088ed568fbbc4658}
+
+
+Wake threads waiting for image to be processed. 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+WorkerThread.h\item 
+WorkerThread.cpp\end{CompactItemize}
